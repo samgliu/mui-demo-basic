@@ -6,7 +6,7 @@ import {
   ToggleButton,
   ToggleButtonGroup,
 } from '@mui/material';
-import { MuiTypography } from './MuiTypography';
+//import { MuiTypography } from './MuiTypography';
 import SendIcon from '@mui/icons-material/Send';
 import FormatBoldIcon from '@mui/icons-material/FormatBold';
 import FormatItalicIcon from '@mui/icons-material/FormatItalic';
@@ -112,6 +112,8 @@ export const MuiButton = () => {
           </ToggleButton>
         </ToggleButtonGroup>
       </Stack>
+
+      
     </Stack>
   );
 };
