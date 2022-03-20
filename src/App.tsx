@@ -1,4 +1,4 @@
-import { Stack } from '@mui/material';
+import { AppBar, Stack } from '@mui/material';
 import './App.css';
 import { MuiAccordion } from './components/MuiAccordion';
 import { MuiAutocomplete } from './components/MuiAutocomplete';
@@ -12,6 +12,7 @@ import { MuiRating } from './components/MuiRating';
 import { MuiSelect } from './components/MuiSelect';
 import { MuiSwitch } from './components/MuiSwitch';
 import { MuiTextfield } from './components/MuiTextField';
+import { MuiNavbar } from './components/MuiNavbar';
 //import { MuiTypography } from './components/MuiTypography';
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
     <div className="App">
       {/* <MuiTypography /> */}
       <Stack spacing={1}>
+        <MuiNavbar />
         <MuiButton />
         <MuiTextfield />
         <MuiSelect />
