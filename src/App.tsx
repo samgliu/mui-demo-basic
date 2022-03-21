@@ -13,6 +13,7 @@ import { MuiSelect } from './components/MuiSelect';
 import { MuiSwitch } from './components/MuiSwitch';
 import { MuiTextfield } from './components/MuiTextField';
 import { MuiNavbar } from './components/MuiNavbar';
+import { MuiLink } from './components/MuiLink';
 //import { MuiTypography } from './components/MuiTypography';
 
 function App() {
@@ -33,6 +34,7 @@ function App() {
         <MuiCard />
         <MuiAccordion />
         <MuiMuiImageList />
+        <MuiLink />
       </Stack>
     </div>
   );
