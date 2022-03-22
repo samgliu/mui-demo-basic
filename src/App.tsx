@@ -14,6 +14,7 @@ import { MuiSwitch } from './components/MuiSwitch';
 import { MuiTextfield } from './components/MuiTextField';
 import { MuiNavbar } from './components/MuiNavbar';
 import { MuiLink } from './components/MuiLink';
+import MuiBreadcrumbs from './components/MuiBreadcrumbs';
 //import { MuiTypography } from './components/MuiTypography';
 
 function App() {
@@ -22,6 +23,7 @@ function App() {
       {/* <MuiTypography /> */}
       <Stack spacing={1}>
         <MuiNavbar />
+        <MuiBreadcrumbs />
         <MuiButton />
         <MuiTextfield />
         <MuiSelect />
