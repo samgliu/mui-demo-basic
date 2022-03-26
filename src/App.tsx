@@ -15,15 +15,19 @@ import { MuiTextfield } from './components/MuiTextField';
 import { MuiNavbar } from './components/MuiNavbar';
 import { MuiLink } from './components/MuiLink';
 import MuiBreadcrumbs from './components/MuiBreadcrumbs';
+import { MuiDrawer } from './components/MuiDrawer';
+import { MuiBottomNavigation } from './components/MuiBottomNavigation';
+import { MuiSpeedDial } from './components/MuiSpeedDial';
 //import { MuiTypography } from './components/MuiTypography';
 
 function App() {
   return (
     <div className="App">
       {/* <MuiTypography /> */}
+      <MuiNavbar />
+      <MuiBreadcrumbs />
+      <MuiDrawer />
       <Stack spacing={1}>
-        <MuiNavbar />
-        <MuiBreadcrumbs />
         <MuiButton />
         <MuiTextfield />
         <MuiSelect />
@@ -38,6 +42,8 @@ function App() {
         <MuiMuiImageList />
         <MuiLink />
       </Stack>
+      <MuiBottomNavigation />
+      <MuiSpeedDial />
     </div>
   );
 }
