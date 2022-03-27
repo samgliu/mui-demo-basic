@@ -18,6 +18,8 @@ import MuiBreadcrumbs from './components/MuiBreadcrumbs';
 import { MuiDrawer } from './components/MuiDrawer';
 import { MuiBottomNavigation } from './components/MuiBottomNavigation';
 import { MuiSpeedDial } from './components/MuiSpeedDial';
+import { MuiAvatar } from './components/MuiAvatar';
+import { MuiBadge } from './components/MuiBadge';
 //import { MuiTypography } from './components/MuiTypography';
 
 function App() {
@@ -27,7 +29,9 @@ function App() {
       <MuiNavbar />
       <MuiBreadcrumbs />
       <MuiDrawer />
-      <Stack spacing={1}>
+      <Stack spacing={2}>
+        <MuiAvatar />
+        <MuiBadge />
         <MuiButton />
         <MuiTextfield />
         <MuiSelect />
