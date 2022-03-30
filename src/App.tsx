@@ -22,6 +22,8 @@ import { MuiAvatar } from './components/MuiAvatar';
 import { MuiBadge } from './components/MuiBadge';
 import { MuiList } from './components/MuiList';
 import { MuiChip } from './components/MuiChip';
+import { MuiTooltip } from './components/MuiTooltip';
+import { MuiTable } from './components/MuiTable';
 //import { MuiTypography } from './components/MuiTypography';
 
 function App() {
@@ -31,6 +33,7 @@ function App() {
       <MuiNavbar />
       <MuiBreadcrumbs />
       <MuiDrawer />
+      <MuiTooltip />
       <Stack spacing={2}>
         <MuiList />
         <MuiChip />
@@ -50,6 +53,7 @@ function App() {
         <MuiMuiImageList />
         <MuiLink />
       </Stack>
+      <MuiTable />
       <MuiBottomNavigation />
       <MuiSpeedDial />
     </div>
