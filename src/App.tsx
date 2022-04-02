@@ -24,6 +24,11 @@ import { MuiList } from './components/MuiList';
 import { MuiChip } from './components/MuiChip';
 import { MuiTooltip } from './components/MuiTooltip';
 import { MuiTable } from './components/MuiTable';
+import { MuiAlert } from './components/MuiAlert';
+import { MuiSnackbar } from './components/MuiSnackbar';
+import { MuiDialog } from './components/MuiDialog';
+import MuiProgress from './components/MuiProgress';
+import { MuiSkeleton } from './components/MuiSkeleton';
 //import { MuiTypography } from './components/MuiTypography';
 
 function App() {
@@ -54,8 +59,13 @@ function App() {
         <MuiLink />
       </Stack>
       <MuiTable />
+      <MuiAlert />
+      <MuiSnackbar />
+      <MuiDialog />
       <MuiBottomNavigation />
       <MuiSpeedDial />
+      <MuiProgress />
+      <MuiSkeleton />
     </div>
   );
 }
