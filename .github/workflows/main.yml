@@ -7,7 +7,7 @@ on:
 
 jobs:
   build:
-    runs-on: ubuntu-latest
+    runs-on: macos-latest
 
     steps:
       - name: Checkout
@@ -17,6 +17,11 @@ jobs:
 
       - name: Install
         run: yarn install
+
+      - name: Setting name
+        run: |
+          git config  user.email "<>"
+          git config  user.name "GitHub Actions Bot"
 
       - name: Deploy
         run: |
