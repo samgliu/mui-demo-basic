@@ -1,4 +1,4 @@
-import { AppBar, Stack } from '@mui/material';
+import {  Stack } from '@mui/material';
 import './App.css';
 import { MuiAccordion } from './components/MuiAccordion';
 import { MuiAutocomplete } from './components/MuiAutocomplete';

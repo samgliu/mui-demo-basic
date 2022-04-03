@@ -1,7 +1,6 @@
 import {
   Stack,
   ImageList,
-  ImageListClasses,
   ImageListItem,
   Box,
   ImageListItemBar,
