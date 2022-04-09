@@ -69,7 +69,6 @@ function App() {
           <MuiDrawer />
           <MuiTooltip />
           <Stack spacing={2}>
-            <MuiResponsiveness />
             <MuiLoadingButton />
             <MuiTabs />
             <MuiTimeline />
@@ -102,6 +101,7 @@ function App() {
           <MuiSpeedDial />
           <MuiProgress />
           <MuiSkeleton />
+          <MuiResponsiveness />
         </div>
       </LocalizationProvider>
     </ThemeProvider>
