@@ -1,5 +1,7 @@
 import './App.css';
 
+import { ThemeProvider, colors, createTheme } from '@mui/material';
+
 import AdapterDateFns from '@mui/lab/AdapterDateFns';
 //import { MuiTypography } from './components/MuiTypography';
 import { LocalizationProvider } from '@mui/lab';
@@ -8,7 +10,7 @@ import { MuiAlert } from './components/MuiAlert';
 import { MuiAutocomplete } from './components/MuiAutocomplete';
 import { MuiAvatar } from './components/MuiAvatar';
 import { MuiBadge } from './components/MuiBadge';
-import { MuiBottomNavigation } from './components/MuiBottomNavigation';
+//import { MuiBottomNavigation } from './components/MuiBottomNavigation';
 import MuiBreadcrumbs from './components/MuiBreadcrumbs';
 import { MuiButton } from './components/MuiButton';
 import { MuiCard } from './components/MuiCard';
@@ -28,6 +30,7 @@ import { MuiPicker } from './components/MuiPicker';
 import MuiProgress from './components/MuiProgress';
 import { MuiRadioButton } from './components/MuiRadioButton';
 import { MuiRating } from './components/MuiRating';
+import { MuiResponsiveness } from './components/MuiResponsiveness';
 import { MuiSelect } from './components/MuiSelect';
 import { MuiSkeleton } from './components/MuiSkeleton';
 import { MuiSnackbar } from './components/MuiSnackbar';
@@ -40,50 +43,68 @@ import { MuiTimeline } from './components/MuiTimeline';
 import { MuiTooltip } from './components/MuiTooltip';
 import { Stack } from '@mui/material';
 
+const myTheme = createTheme({
+  status: {
+    danger: '#e53e3e',
+  },
+  palette: {
+    secondary: {
+      main: colors.orange[500],
+    },
+    neutral: {
+      main: colors.grey[500],
+      darker: colors.grey[700],
+    },
+  },
+});
+
 function App() {
   return (
-    <LocalizationProvider dateAdapter={AdapterDateFns}>
-      <div className="App">
-        {/* <MuiTypography /> */}
-        <MuiNavbar />
-        <MuiBreadcrumbs />
-        <MuiDrawer />
-        <MuiTooltip />
-        <Stack spacing={2}>
-          <MuiLoadingButton />
-          <MuiTabs />
-          <MuiTimeline />
-          <MuiMasonry />
-          <MuiDateRangePick />
-          <MuiPicker />
-          <MuiList />
-          <MuiChip />
-          <MuiAvatar />
-          <MuiBadge />
-          <MuiButton />
-          <MuiTextfield />
-          <MuiSelect />
-          <MuiRadioButton />
-          <MuiCheckbox />
-          <MuiSwitch />
-          <MuiRating />
-          <MuiAutocomplete />
-          <MuiLayout />
-          <MuiCard />
-          <MuiAccordion />
-          <MuiMuiImageList />
-          <MuiLink />
-        </Stack>
-        <MuiTable />
-        <MuiAlert />
-        <MuiSnackbar />
-        <MuiDialog />
-        {/* <MuiBottomNavigation /> */}
-        <MuiSpeedDial />
-        <MuiProgress />
-        <MuiSkeleton />
-      </div>
-    </LocalizationProvider>
+    <ThemeProvider theme={myTheme}>
+      <LocalizationProvider dateAdapter={AdapterDateFns}>
+        <div className="App">
+          {/* <MuiTypography /> */}
+          <MuiNavbar />
+          <MuiBreadcrumbs />
+          <MuiDrawer />
+          <MuiTooltip />
+          <Stack spacing={2}>
+            <MuiResponsiveness />
+            <MuiLoadingButton />
+            <MuiTabs />
+            <MuiTimeline />
+            <MuiMasonry />
+            <MuiDateRangePick />
+            <MuiPicker />
+            <MuiList />
+            <MuiChip />
+            <MuiAvatar />
+            <MuiBadge />
+            <MuiButton />
+            <MuiTextfield />
+            <MuiSelect />
+            <MuiRadioButton />
+            <MuiCheckbox />
+            <MuiSwitch />
+            <MuiRating />
+            <MuiAutocomplete />
+            <MuiLayout />
+            <MuiCard />
+            <MuiAccordion />
+            <MuiMuiImageList />
+            <MuiLink />
+          </Stack>
+          <MuiTable />
+          <MuiAlert />
+          <MuiSnackbar />
+          <MuiDialog />
+          {/* <MuiBottomNavigation /> */}
+          <MuiSpeedDial />
+          <MuiProgress />
+          <MuiSkeleton />
+        </div>
+      </LocalizationProvider>
+    </ThemeProvider>
   );
 }
 
